@@ -10,4 +10,14 @@
 
 @interface Box : NSObject
 
+@property (nonatomic, assign) float length;
+@property (nonatomic, assign) float width;
+@property (nonatomic, assign) float height;
+
+-(instancetype)initWithLength:(float)length andWidth:(float)width andHeight:(float)height;
+
+-(float)volume;
+-(float)howManyFitInBox:(Box *)box;
+
+
 @end
